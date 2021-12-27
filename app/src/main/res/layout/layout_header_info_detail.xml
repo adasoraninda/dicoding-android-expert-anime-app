@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:padding="@dimen/small_padding">
+
+    <TextView
+        android:id="@+id/label_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:background="?attr/colorPrimary"
+        android:text="@string/score"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/text_score"
+        app:layout_constraintEnd_toStartOf="@id/line_vr_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x_small_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textAppearance="@style/ScoreTextStyle"
+        app:layout_constraintBottom_toTopOf="@id/text_users"
+        app:layout_constraintEnd_toStartOf="@id/line_vr_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_score"
+        tools:text="8.35" />
+
+    <TextView
+        android:id="@+id/text_users"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x_small_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:maxLines="3"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/line_vr_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_score"
+        tools:text="1,000,000,000 users" />
+
+
+    <View
+        android:id="@+id/line_vr_1"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_ranked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_padding"
+        android:text="@string/ranked"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toEndOf="@id/line_vr_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_ranked"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:maxLines="1"
+        android:textColor="@color/text_color_2"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_ranked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_ranked"
+        tools:text="#4000" />
+
+    <TextView
+        android:id="@+id/label_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xx_small_padding"
+        android:text="@string/popularity"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="@id/label_ranked"
+        app:layout_constraintTop_toBottomOf="@id/label_ranked" />
+
+    <TextView
+        android:id="@+id/text_popularity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:maxLines="1"
+        android:textColor="@color/text_color_2"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_popularity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_popularity"
+        tools:text="#4000" />
+
+    <TextView
+        android:id="@+id/label_members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xx_small_padding"
+        android:text="@string/members"
+        android:textColor="@color/text_color"
+        app:layout_constraintStart_toStartOf="@id/label_ranked"
+        app:layout_constraintTop_toBottomOf="@id/label_popularity" />
+
+    <TextView
+        android:id="@+id/text_members"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:maxLines="1"
+        android:textColor="@color/text_color_2"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_members"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_members"
+        tools:text="#4000" />
+
+    <TextView
+        android:id="@+id/text_season"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/color_primary"
+        android:textSize="12sp"
+        tools:text="Winter 2021" />
+
+    <View
+        android:id="@+id/line_vr_2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/color_primary" />
+
+    <TextView
+        android:id="@+id/text_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/color_primary"
+        android:textSize="12sp"
+        tools:text="TV" />
+
+    <View
+        android:id="@+id/line_vr_3"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/color_primary" />
+
+    <TextView
+        android:id="@+id/text_studio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/color_primary"
+        android:textSize="12sp"
+        tools:text="Tms Entertainment" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_info_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="text_season,line_vr_2,text_type,line_vr_3,text_studio"
+        app:flow_horizontalAlign="start"
+        app:flow_horizontalBias="0"
+        app:flow_horizontalGap="@dimen/small_padding"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/label_members"
+        app:layout_constraintTop_toBottomOf="@id/label_members"
+        app:layout_constraintVertical_bias="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

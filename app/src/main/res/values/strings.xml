@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Anime App</string>
+    <string name="anime">Anime</string>
+    <string name="favorite">Favorite</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="delete_all">Delete All</string>
+    <string name="information">Information</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="character">Characters\nVoice Actors</string>
+    <string name="staff">Staff</string>
+    <string name="error_message">An error occurred\nPlease try again later</string>
+    <string name="empty_message">No Result</string>
+    <string name="score">Score</string>
+    <string name="alternative_titles">Alternative Titles</string>
+    <string name="label_english">English: </string>
+    <string name="label_japanese">Japanese:</string>
+    <string name="label_synonyms">Synonyms: </string>
+    <string name="statistics">Statistics</string>
+    <string name="label_score">Score:</string>
+    <string name="label_ranked">Ranked:</string>
+    <string name="label_favorite">Favorites:</string>
+    <string name="label_members">Members:</string>
+    <string name="label_popularity">Popularity:</string>
+    <string name="type">Type:</string>
+    <string name="label_episodes">Episodes:</string>
+    <string name="label_status">Status:</string>
+    <string name="label_aired">Aired:</string>
+    <string name="premiered">Premiered:</string>
+    <string name="label_broadcast">Broadcast:</string>
+    <string name="label_producers">Producers:</string>
+    <string name="label_licensors">Licensors:</string>
+    <string name="label_studios">Studios:</string>
+    <string name="label_source">Source:</string>
+    <string name="label_genres">Genres:</string>
+    <string name="label_duration">Duration:</string>
+    <string name="label_rating">Rating:</string>
+    <string name="members">Members</string>
+    <string name="popularity">Popularity</string>
+    <string name="ranked">Ranked</string>
+    <string name="favored_an_anime">Favored an Anime</string>
+    <string name="un_favorite_an_anime">Un favorite an Anime</string>
+    <string name="un_favorite_all_anime">Un favorite all Anime</string>
+    <string name="title_favorite">Favorite Anime</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_search">Search Anime</string>
+    <string name="dark_mode">Dark Mode</string>
+
+    <!-- format -->
+    <string name="tag_format"># %d</string>
+    <string name="user_format">%d users</string>
+</resources>

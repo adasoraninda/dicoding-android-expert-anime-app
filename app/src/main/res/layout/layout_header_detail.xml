@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/normal_padding"
+    tools:background="?attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/colorSecondary"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="4:2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/secondary_color_dark"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/shadow_banner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_shadow"
+        app:layout_constraintBottom_toBottomOf="@id/image_banner" />
+
+    <View
+        android:id="@+id/background_poster"
+        android:layout_width="138dp"
+        android:layout_height="168dp"
+        android:background="?colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/image_banner"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+        app:layout_constraintStart_toStartOf="@id/guide_line_start"
+        app:layout_constraintTop_toBottomOf="@id/image_banner" />
+
+    <ImageView
+        android:id="@+id/image_poster"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:layout_margin="@dimen/small_padding"
+        android:elevation="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/background_poster"
+        app:layout_constraintEnd_toEndOf="@id/background_poster"
+        app:layout_constraintStart_toStartOf="@id/background_poster"
+        app:layout_constraintTop_toTopOf="@id/background_poster"
+        tools:ignore="ContentDescription"
+        tools:src="@color/secondary_color" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x_small_padding"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+        app:layout_constraintStart_toStartOf="@id/guide_line_start"
+        app:layout_constraintTop_toBottomOf="@id/image_poster"
+        tools:text="@tools:sample/lorem/random" />
+
+    <include
+        android:id="@+id/layout_header_info_detail"
+        layout="@layout/layout_header_info_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_padding"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_end"
+        app:layout_constraintStart_toStartOf="@id/guide_line_start"
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/normal_padding" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/normal_padding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
